@@ -7,7 +7,7 @@
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
-S_0x63a63f3efdf0 .scope module, "fun" "fun" 2 1;
+S_0x6006b4b3edf0 .scope module, "fun" "fun" 2 1;
  .timescale 0 0;
     .port_info 0 /INPUT 1 "a";
     .port_info 1 /INPUT 1 "a_not";
@@ -18,54 +18,54 @@ S_0x63a63f3efdf0 .scope module, "fun" "fun" 2 1;
     .port_info 6 /INPUT 1 "d";
     .port_info 7 /INPUT 1 "d_not";
     .port_info 8 /OUTPUT 1 "out";
-L_0x63a63f43da20 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-o0x73cd43ea9018 .functor BUFZ 1, C4<z>; HiZ drive
-L_0x63a63f43dae0 .functor PMOS 1, L_0x63a63f43da20, o0x73cd43ea9018, C4<0>, C4<0>;
-o0x73cd43ea9138 .functor BUFZ 1, C4<z>; HiZ drive
-L_0x63a63f43db80 .functor PMOS 1, L_0x63a63f43dae0, o0x73cd43ea9138, C4<0>, C4<0>;
-o0x73cd43ea90a8 .functor BUFZ 1, C4<z>; HiZ drive
-L_0x63a63f43dca0 .functor PMOS 1, L_0x63a63f43da20, o0x73cd43ea90a8, C4<0>, C4<0>;
-L_0x63a63f43dd70 .functor PMOS 1, L_0x63a63f43dca0, o0x73cd43ea9138, C4<0>, C4<0>;
-L_0x63a63f43df10 .functor PMOS 1, L_0x63a63f43da20, o0x73cd43ea9018, C4<0>, C4<0>;
-o0x73cd43ea9108 .functor BUFZ 1, C4<z>; HiZ drive
-L_0x63a63f43df80 .functor PMOS 1, L_0x63a63f43df10, o0x73cd43ea9108, C4<0>, C4<0>;
-o0x73cd43ea9078 .functor BUFZ 1, C4<z>; HiZ drive
-L_0x63a63f43e090 .functor PMOS 1, L_0x63a63f43da20, o0x73cd43ea9078, C4<0>, C4<0>;
-L_0x63a63f43e100 .functor PMOS 1, L_0x63a63f43e090, o0x73cd43ea9108, C4<0>, C4<0>;
-RS_0x73cd43ea92e8 .resolv tri, L_0x63a63f43e400, L_0x63a63f43e4c0;
-L_0x63a63f43e2b0 .functor NMOS 1, RS_0x73cd43ea92e8, o0x73cd43ea9018, C4<0>, C4<0>;
-L_0x63a63f43e320 .functor NMOS 1, RS_0x73cd43ea92e8, o0x73cd43ea9138, C4<0>, C4<0>;
-RS_0x73cd43ea9318 .resolv tri, L_0x63a63f43e390, L_0x63a63f43e760;
-L_0x63a63f43e400 .functor NMOS 1, RS_0x73cd43ea9318, o0x73cd43ea90a8, C4<0>, C4<0>;
-L_0x63a63f43e4c0 .functor NMOS 1, RS_0x73cd43ea9318, o0x73cd43ea9138, C4<0>, C4<0>;
-RS_0x73cd43ea9348 .resolv tri, L_0x63a63f43e8f0, L_0x63a63f43e960;
-L_0x63a63f43e390 .functor NMOS 1, RS_0x73cd43ea9348, o0x73cd43ea9018, C4<0>, C4<0>;
-L_0x63a63f43e760 .functor NMOS 1, RS_0x73cd43ea9348, o0x73cd43ea9108, C4<0>, C4<0>;
-L_0x63a63f43d990 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-L_0x63a63f43e8f0 .functor NMOS 1, L_0x63a63f43d990, o0x73cd43ea9078, C4<0>, C4<0>;
-L_0x63a63f43e960 .functor NMOS 1, L_0x63a63f43d990, o0x73cd43ea9108, C4<0>, C4<0>;
-v0x63a63f3f0060_0 .net "a", 0 0, o0x73cd43ea9018;  0 drivers
-o0x73cd43ea9048 .functor BUFZ 1, C4<z>; HiZ drive
-v0x63a63f43ca70_0 .net "a_not", 0 0, o0x73cd43ea9048;  0 drivers
-v0x63a63f43cb30_0 .net "b", 0 0, o0x73cd43ea9078;  0 drivers
-v0x63a63f43cbd0_0 .net "b_not", 0 0, o0x73cd43ea90a8;  0 drivers
-o0x73cd43ea90d8 .functor BUFZ 1, C4<z>; HiZ drive
-v0x63a63f43cc90_0 .net "c", 0 0, o0x73cd43ea90d8;  0 drivers
-v0x63a63f43cda0_0 .net "c_not", 0 0, o0x73cd43ea9108;  0 drivers
-v0x63a63f43ce60_0 .net "d", 0 0, o0x73cd43ea9138;  0 drivers
-o0x73cd43ea9168 .functor BUFZ 1, C4<z>; HiZ drive
-v0x63a63f43cf20_0 .net "d_not", 0 0, o0x73cd43ea9168;  0 drivers
-v0x63a63f43cfe0_0 .net8 "gnd", 0 0, L_0x63a63f43d990;  1 drivers, strength-aware
-RS_0x73cd43ea91c8 .resolv tri, L_0x63a63f43db80, L_0x63a63f43dd70, L_0x63a63f43df80, L_0x63a63f43e100, L_0x63a63f43e2b0, L_0x63a63f43e320;
-v0x63a63f43d0a0_0 .net8 "out", 0 0, RS_0x73cd43ea91c8;  6 drivers, strength-aware
-v0x63a63f43d160_0 .net8 "vdd", 0 0, L_0x63a63f43da20;  1 drivers, strength-aware
-v0x63a63f43d220_0 .net8 "w1", 0 0, L_0x63a63f43dae0;  1 drivers, strength-aware
-v0x63a63f43d2e0_0 .net8 "w2", 0 0, L_0x63a63f43dca0;  1 drivers, strength-aware
-v0x63a63f43d3a0_0 .net8 "w3", 0 0, L_0x63a63f43df10;  1 drivers, strength-aware
-v0x63a63f43d460_0 .net8 "w4", 0 0, L_0x63a63f43e090;  1 drivers, strength-aware
-v0x63a63f43d520_0 .net8 "w5", 0 0, RS_0x73cd43ea92e8;  2 drivers, strength-aware
-v0x63a63f43d5e0_0 .net8 "w6", 0 0, RS_0x73cd43ea9318;  2 drivers, strength-aware
-v0x63a63f43d7b0_0 .net8 "w7", 0 0, RS_0x73cd43ea9348;  2 drivers, strength-aware
+L_0x6006b4b8ca20 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+o0x779bd6c5a018 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x6006b4b8cae0 .functor PMOS 1, L_0x6006b4b8ca20, o0x779bd6c5a018, C4<0>, C4<0>;
+o0x779bd6c5a138 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x6006b4b8cb80 .functor PMOS 1, L_0x6006b4b8cae0, o0x779bd6c5a138, C4<0>, C4<0>;
+o0x779bd6c5a0a8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x6006b4b8cca0 .functor PMOS 1, L_0x6006b4b8ca20, o0x779bd6c5a0a8, C4<0>, C4<0>;
+L_0x6006b4b8cd70 .functor PMOS 1, L_0x6006b4b8cca0, o0x779bd6c5a138, C4<0>, C4<0>;
+L_0x6006b4b8cf10 .functor PMOS 1, L_0x6006b4b8ca20, o0x779bd6c5a018, C4<0>, C4<0>;
+o0x779bd6c5a108 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x6006b4b8cf80 .functor PMOS 1, L_0x6006b4b8cf10, o0x779bd6c5a108, C4<0>, C4<0>;
+o0x779bd6c5a078 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x6006b4b8d090 .functor PMOS 1, L_0x6006b4b8ca20, o0x779bd6c5a078, C4<0>, C4<0>;
+L_0x6006b4b8d100 .functor PMOS 1, L_0x6006b4b8d090, o0x779bd6c5a108, C4<0>, C4<0>;
+RS_0x779bd6c5a2e8 .resolv tri, L_0x6006b4b8d400, L_0x6006b4b8d4c0;
+L_0x6006b4b8d2b0 .functor NMOS 1, RS_0x779bd6c5a2e8, o0x779bd6c5a018, C4<0>, C4<0>;
+L_0x6006b4b8d320 .functor NMOS 1, RS_0x779bd6c5a2e8, o0x779bd6c5a138, C4<0>, C4<0>;
+RS_0x779bd6c5a318 .resolv tri, L_0x6006b4b8d390, L_0x6006b4b8d760;
+L_0x6006b4b8d400 .functor NMOS 1, RS_0x779bd6c5a318, o0x779bd6c5a0a8, C4<0>, C4<0>;
+L_0x6006b4b8d4c0 .functor NMOS 1, RS_0x779bd6c5a318, o0x779bd6c5a138, C4<0>, C4<0>;
+RS_0x779bd6c5a348 .resolv tri, L_0x6006b4b8d8f0, L_0x6006b4b8d960;
+L_0x6006b4b8d390 .functor NMOS 1, RS_0x779bd6c5a348, o0x779bd6c5a018, C4<0>, C4<0>;
+L_0x6006b4b8d760 .functor NMOS 1, RS_0x779bd6c5a348, o0x779bd6c5a108, C4<0>, C4<0>;
+L_0x6006b4b8c990 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+L_0x6006b4b8d8f0 .functor NMOS 1, L_0x6006b4b8c990, o0x779bd6c5a078, C4<0>, C4<0>;
+L_0x6006b4b8d960 .functor NMOS 1, L_0x6006b4b8c990, o0x779bd6c5a108, C4<0>, C4<0>;
+v0x6006b4b3f060_0 .net "a", 0 0, o0x779bd6c5a018;  0 drivers
+o0x779bd6c5a048 .functor BUFZ 1, C4<z>; HiZ drive
+v0x6006b4b8ba70_0 .net "a_not", 0 0, o0x779bd6c5a048;  0 drivers
+v0x6006b4b8bb30_0 .net "b", 0 0, o0x779bd6c5a078;  0 drivers
+v0x6006b4b8bbd0_0 .net "b_not", 0 0, o0x779bd6c5a0a8;  0 drivers
+o0x779bd6c5a0d8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x6006b4b8bc90_0 .net "c", 0 0, o0x779bd6c5a0d8;  0 drivers
+v0x6006b4b8bda0_0 .net "c_not", 0 0, o0x779bd6c5a108;  0 drivers
+v0x6006b4b8be60_0 .net "d", 0 0, o0x779bd6c5a138;  0 drivers
+o0x779bd6c5a168 .functor BUFZ 1, C4<z>; HiZ drive
+v0x6006b4b8bf20_0 .net "d_not", 0 0, o0x779bd6c5a168;  0 drivers
+v0x6006b4b8bfe0_0 .net8 "gnd", 0 0, L_0x6006b4b8c990;  1 drivers, strength-aware
+RS_0x779bd6c5a1c8 .resolv tri, L_0x6006b4b8cb80, L_0x6006b4b8cd70, L_0x6006b4b8cf80, L_0x6006b4b8d100, L_0x6006b4b8d2b0, L_0x6006b4b8d320;
+v0x6006b4b8c0a0_0 .net8 "out", 0 0, RS_0x779bd6c5a1c8;  6 drivers, strength-aware
+v0x6006b4b8c160_0 .net8 "vdd", 0 0, L_0x6006b4b8ca20;  1 drivers, strength-aware
+v0x6006b4b8c220_0 .net8 "w1", 0 0, L_0x6006b4b8cae0;  1 drivers, strength-aware
+v0x6006b4b8c2e0_0 .net8 "w2", 0 0, L_0x6006b4b8cca0;  1 drivers, strength-aware
+v0x6006b4b8c3a0_0 .net8 "w3", 0 0, L_0x6006b4b8cf10;  1 drivers, strength-aware
+v0x6006b4b8c460_0 .net8 "w4", 0 0, L_0x6006b4b8d090;  1 drivers, strength-aware
+v0x6006b4b8c520_0 .net8 "w5", 0 0, RS_0x779bd6c5a2e8;  2 drivers, strength-aware
+v0x6006b4b8c5e0_0 .net8 "w6", 0 0, RS_0x779bd6c5a318;  2 drivers, strength-aware
+v0x6006b4b8c7b0_0 .net8 "w7", 0 0, RS_0x779bd6c5a348;  2 drivers, strength-aware
 # The file index is used to find the file name in the following table.
 :file_names 3;
     "N/A";

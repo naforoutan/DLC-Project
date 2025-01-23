@@ -8,9 +8,10 @@ module problem1_TestBench();
 
     initial begin
 
-        $dumpfile("problem1_tb.vcd");
+        $dumpfile("waveform_problem1.vcd"); 
+        $dumpvars(0, problem1_TestBench);
 
-        #50;  
+        #1;  
         a = 0;
         b = 0; 
         c = 0; 
@@ -21,7 +22,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 0;
         b = 0; 
         c = 0; 
@@ -32,7 +33,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 0;
         b = 0; 
         c = 1; 
@@ -43,7 +44,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 0;
         b = 0; 
         c = 1; 
@@ -54,7 +55,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 0;
         b = 1; 
         c = 0; 
@@ -65,7 +66,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 0;
         b = 1; 
         c = 0; 
@@ -76,7 +77,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 0;
         b = 1; 
         c = 1; 
@@ -87,7 +88,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 0;
         b = 1; 
         c = 1; 
@@ -98,7 +99,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 1;
         b = 0; 
         c = 0; 
@@ -109,7 +110,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 1;
         b = 0; 
         c = 0; 
@@ -120,7 +121,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 1;
         b = 0; 
         c = 1; 
@@ -131,7 +132,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 1;
         b = 0; 
         c = 1; 
@@ -142,7 +143,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 1;
         b = 1; 
         c = 0; 
@@ -153,7 +154,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 1;
         b = 1; 
         c = 0; 
@@ -164,7 +165,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 1;
         b = 1; 
         c = 1; 
@@ -175,7 +176,7 @@ module problem1_TestBench();
         not_c = ~c;
         $display("A:%d , B:%d , C:%d , D:%d --> %d",a,b,c,d, out);
 
-        #50;  
+        #1;  
         a = 1;
         b = 1; 
         c = 1; 
