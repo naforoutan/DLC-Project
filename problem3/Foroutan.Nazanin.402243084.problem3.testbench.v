@@ -8,6 +8,10 @@ module problem2_testbench();
     ALU ALU_6bit (A, B, op, out);
 
     initial begin
+        $dumpfile("waveform_problem3.vcd"); 
+        $dumpvars(0, problem2_testbench);
+
+
         A = -5;
         B = 20;
         op = 0;
