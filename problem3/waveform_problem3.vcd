@@ -1,5 +1,5 @@
 $date
-	Fri Jan 24 00:01:04 2025
+	Sun Jan 26 19:26:39 2025
 $end
 $version
 	Icarus Verilog
@@ -7,7 +7,7 @@ $end
 $timescale
 	1s
 $end
-$scope module problem2_testbench $end
+$scope module problem3_testbench $end
 $var wire 6 ! out [5:0] $end
 $var reg 6 " A [5:0] $end
 $var reg 6 # B [5:0] $end

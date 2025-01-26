@@ -1,0 +1,191 @@
+$date
+	Sun Jan 26 19:23:37 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module problem2_testbench $end
+$var wire 1 ! overflow $end
+$var wire 4 " Sum [3:0] $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
+$scope module adder $end
+$var wire 4 % A [3:0] $end
+$var wire 1 & A3andB3andS3not $end
+$var wire 1 ' A3notandB3notandS3 $end
+$var wire 4 ( B [3:0] $end
+$var wire 1 ! overflow $end
+$var wire 4 ) sum [3:0] $end
+$var wire 1 * cout $end
+$var wire 1 + c3 $end
+$var wire 1 , c2 $end
+$var wire 1 - c1 $end
+$scope module fa1 $end
+$var wire 1 . A $end
+$var wire 1 / AandB $end
+$var wire 1 0 AandCin $end
+$var wire 1 1 AxorB $end
+$var wire 1 2 B $end
+$var wire 1 3 BandCin $end
+$var wire 1 4 cin $end
+$var wire 1 - cout $end
+$var wire 1 5 sum $end
+$upscope $end
+$scope module fa2 $end
+$var wire 1 6 A $end
+$var wire 1 7 AandB $end
+$var wire 1 8 AandCin $end
+$var wire 1 9 AxorB $end
+$var wire 1 : B $end
+$var wire 1 ; BandCin $end
+$var wire 1 - cin $end
+$var wire 1 , cout $end
+$var wire 1 < sum $end
+$upscope $end
+$scope module fa3 $end
+$var wire 1 = A $end
+$var wire 1 > AandB $end
+$var wire 1 ? AandCin $end
+$var wire 1 @ AxorB $end
+$var wire 1 A B $end
+$var wire 1 B BandCin $end
+$var wire 1 , cin $end
+$var wire 1 + cout $end
+$var wire 1 C sum $end
+$upscope $end
+$scope module fa4 $end
+$var wire 1 D A $end
+$var wire 1 E AandB $end
+$var wire 1 F AandCin $end
+$var wire 1 G AxorB $end
+$var wire 1 H B $end
+$var wire 1 I BandCin $end
+$var wire 1 + cin $end
+$var wire 1 * cout $end
+$var wire 1 J sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+1C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+1:
+09
+08
+17
+16
+15
+04
+03
+12
+11
+00
+0/
+0.
+0-
+1,
+0+
+0*
+b101 )
+b11 (
+0'
+0&
+b10 %
+b11 $
+b10 #
+b101 "
+0!
+$end
+#10
+1!
+1'
+1C
+18
+1J
+1,
+b1100 "
+b1100 )
+05
+1-
+1+
+19
+07
+1B
+01
+1/
+1>
+1?
+0:
+1A
+1.
+1=
+b101 $
+b101 (
+b111 #
+b111 %
+#20
+0!
+b1000 "
+b1000 )
+0C
+1*
+0'
+1;
+1@
+0>
+0B
+1I
+08
+1E
+1F
+1:
+0A
+1H
+06
+1D
+b1011 $
+b1011 (
+b1101 #
+b1101 %
+#30
+1!
+1&
+0J
+0F
+0I
+1<
+0,
+b10 "
+b10 )
+0C
+0+
+09
+0;
+0@
+0?
+0:
+0=
+b1001 $
+b1001 (
+b1001 #
+b1001 %
+#40

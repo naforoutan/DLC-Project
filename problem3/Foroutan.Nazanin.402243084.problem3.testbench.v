@@ -1,6 +1,6 @@
-`include "Foroutan.Nazanin.402243084.problem2.module.v"
+`include "Foroutan.Nazanin.402243084.problem3.module.v"
 
-module problem2_testbench();
+module problem3_testbench();
     reg[5:0] A, B;
     reg[1:0] op;
     wire[5:0] out;
@@ -9,7 +9,7 @@ module problem2_testbench();
 
     initial begin
         $dumpfile("waveform_problem3.vcd"); 
-        $dumpvars(0, problem2_testbench);
+        $dumpvars(0, problem3_testbench);
 
 
         A = -5;
