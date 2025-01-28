@@ -11,7 +11,7 @@ module problem1_TestBench();
         $dumpfile("waveform_problem1.vcd"); 
         $dumpvars(0, problem1_TestBench);
 
-        #1;  
+          
         a = 0;
         b = 0; 
         c = 0; 
