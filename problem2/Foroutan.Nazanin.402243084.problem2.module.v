@@ -12,8 +12,8 @@ module full_adder(input A, B, cin, output sum, cout); // Added missing comma
 endmodule
 
 
-module four_bit_adder(input [3:0] A, B, output [3:0] sum, output overflow);
-    wire c1, c2, c3, cout; // Declare cout wire
+module four_bit_adder(input [3:0] A, B, output [3:0] sum, output overflow, cout);
+    wire c1, c2, c3; // Declare cout wire
     wire A3andB3andS3not, A3notandB3notandS3;
 
     full_adder fa1(A[0], B[0], 1'b0, sum[0], c1);

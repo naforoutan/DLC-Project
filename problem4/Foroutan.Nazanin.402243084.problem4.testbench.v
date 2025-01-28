@@ -3,11 +3,13 @@
 module odd_counter_tb;
 
 reg clk;
+reg reset; // Add reset signal
 wire [3:0] count;
 
 // Instantiate the odd_counter module
 odd_counter uut (
     .clk(clk),
+    .reset(reset), // Connect reset signal
     .count(count)
 );
 
@@ -17,14 +19,23 @@ initial begin
     forever #5 clk = ~clk; // Toggle clock every 5 time units
 end
 
-
 initial begin
     $monitor("Time = %0t, Count = %0d", $time, count);
-end
 
+    // Initial reset
+    reset = 1; // Apply reset
+    #10;
+    reset = 0; // Release reset
 
-initial begin
-    #100 $finish; // Run the simulation for 100 time units
+    // Wait for count to be 5
+    wait (count == 4'b0101);
+    reset = 1;
+    #10;
+    reset = 0;
+
+    #100; // Run for additional 100 time units
+
+    $finish;
 end
 
 endmodule
