@@ -1,0 +1,110 @@
+$date
+	Tue Jan 28 08:53:26 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module odd_counter_tb $end
+$var wire 4 ! count [3:0] $end
+$var reg 1 " clk $end
+$var reg 1 # reset $end
+$scope module counter $end
+$var wire 1 " clk $end
+$var wire 1 # reset $end
+$var reg 4 $ count [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 $
+1#
+0"
+b1 !
+$end
+#5
+1"
+#10
+0"
+0#
+#15
+b11 !
+b11 $
+1"
+#20
+0"
+#25
+1#
+b1 !
+b1 $
+1"
+#30
+0"
+#35
+b11 !
+b11 $
+1"
+0#
+#40
+0"
+#45
+b101 !
+b101 $
+1"
+#50
+0"
+#55
+b111 !
+b111 $
+1"
+#60
+0"
+#65
+b1001 !
+b1001 $
+1"
+#70
+0"
+#75
+b1 !
+b1 $
+1"
+#80
+0"
+#85
+b11 !
+b11 $
+1"
+#90
+0"
+#95
+b101 !
+b101 $
+1"
+#100
+0"
+#105
+b111 !
+b111 $
+1"
+#110
+0"
+#115
+b1001 !
+b1001 $
+1"
+#120
+0"
+#125
+b1 !
+b1 $
+1"
+#130
+0"
+#135
+b11 !
+b11 $
+1"

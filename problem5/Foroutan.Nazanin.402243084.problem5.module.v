@@ -40,7 +40,7 @@ module sequence_detector(
                 S3: next_state = (in_bit == 0) ? S4 : S0;
                 S4: next_state = (in_bit == 1) ? S5 : S1;
                 S5: next_state = (in_bit == 1) ? S6 : S1;
-                S6: next_state = (in_bit == 0) ? S7 : S1;
+                S6: next_state = (in_bit == 0) ? S7 : S0;
                 S7: next_state = (in_bit == 0) ? S1 : S5;
                 default: next_state = S0;
             endcase

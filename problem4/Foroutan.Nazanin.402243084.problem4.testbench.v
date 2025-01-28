@@ -7,7 +7,7 @@ reg reset; // Add reset signal
 wire [3:0] count;
 
 // Instantiate the odd_counter module
-odd_counter uut (
+odd_counter counter(
     .clk(clk),
     .reset(reset), // Connect reset signal
     .count(count)
@@ -20,6 +20,8 @@ initial begin
 end
 
 initial begin
+    $dumpfile("odd_counter_tb.vcd"); // Set the VCD file name
+    $dumpvars(0, odd_counter_tb); 
     $monitor("Time = %0t, Count = %0d", $time, count);
 
     // Initial reset

@@ -1,5 +1,5 @@
 $date
-	Tue Jan 28 04:41:25 2025
+	Tue Jan 28 08:40:41 2025
 $end
 $version
 	Icarus Verilog
@@ -22,45 +22,50 @@ $var wire 6 * res2 [5:0] $end
 $var wire 6 + res1 [5:0] $end
 $var wire 6 , res0 [5:0] $end
 $var wire 6 - out [5:0] $end
-$var wire 1 . cout_add $end
+$var wire 1 . cout_shift $end
+$var wire 1 / cout_add $end
 $var wire 1 " cout $end
 $scope module one $end
-$var wire 6 / A [5:0] $end
-$var wire 6 0 B [5:0] $end
-$var wire 6 1 res [5:0] $end
-$var wire 1 . cout $end
+$var wire 6 0 A [5:0] $end
+$var wire 6 1 B [5:0] $end
+$var wire 6 2 res [5:0] $end
+$var wire 1 / cout $end
 $upscope $end
 $scope module three $end
-$var wire 6 2 A [5:0] $end
-$var wire 6 3 B [5:0] $end
-$var wire 6 4 res [5:0] $end
+$var wire 6 3 A [5:0] $end
+$var wire 6 4 B [5:0] $end
+$var wire 6 5 res [5:0] $end
 $upscope $end
 $scope module two $end
-$var wire 6 5 B [5:0] $end
-$var wire 6 6 res [5:0] $end
+$var wire 6 6 B [5:0] $end
+$var wire 6 7 res [5:0] $end
 $upscope $end
 $scope module zero $end
-$var wire 6 7 A [5:0] $end
-$var wire 6 8 B [5:0] $end
-$var wire 6 9 res [5:0] $end
+$var wire 6 8 A [5:0] $end
+$var wire 6 9 B [5:0] $end
+$var wire 1 . cout $end
+$var wire 6 : res [5:0] $end
+$var wire 6 ; shifted_res [5:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b110110 9
-b10100 8
-b111011 7
-b101100 6
-b10100 5
-b100010 4
-b10100 3
-b111011 2
-b110111 1
-b10100 0
-b111011 /
-1.
+b110110 ;
+b110110 :
+b10100 9
+b111011 8
+b101100 7
+b10100 6
+b100010 5
+b10100 4
+b111011 3
+b110111 2
+b10100 1
+b111011 0
+1/
+0.
 b110110 -
 b110110 ,
 b110111 +
@@ -78,102 +83,106 @@ $end
 #1
 b100011 !
 b100011 -
-0.
+0/
 b100011 +
-b100011 1
+b100011 2
 b0 )
-b0 4
+b0 5
 b11001 ,
-b11001 9
+b11001 :
+b11001 ;
 b1 %
 b1 (
 b110110 *
-b110110 6
+b110110 7
 b1010 $
 b1010 '
-b1010 0
-b1010 3
-b1010 5
-b1010 8
+b1010 1
+b1010 4
+b1010 6
+b1010 9
 b101 #
 b101 &
-b101 /
-b101 2
-b101 7
+b101 0
+b101 3
+b101 8
 #2
 b100111 !
 b100111 -
-1.
+1/
 b11010 +
-b11010 1
+b11010 2
 b101 )
-b101 4
+b101 5
 b1000 ,
-b1000 9
+b1000 :
+b1000 ;
 b10 %
 b10 (
 b100111 *
-b100111 6
+b100111 7
 b11001 $
 b11001 '
-b11001 0
-b11001 3
-b11001 5
-b11001 8
+b11001 1
+b11001 4
+b11001 6
+b11001 9
 b1111 #
 b1111 &
-b1111 /
-b1111 2
-b1111 7
+b1111 0
+b1111 3
+b1111 8
 #3
 b11001 !
 b11001 -
-0.
+0/
 b111 +
-b111 1
+b111 2
 b11001 )
-b11001 4
+b11001 5
 b1001 ,
-b1001 9
+b1001 :
+b1001 ;
 b11 %
 b11 (
 b11101 *
-b11101 6
+b11101 7
 b100011 $
 b100011 '
-b100011 0
-b100011 3
-b100011 5
-b100011 8
+b100011 1
+b100011 4
+b100011 6
+b100011 9
 b11110 #
 b11110 &
-b11110 /
-b11110 2
-b11110 7
+b11110 0
+b11110 3
+b11110 8
 #4
 b101 !
 b101 -
 1"
-1.
+1/
 b101 +
-b101 1
+b101 2
 b110101 )
-b110101 4
+b110101 5
 b110001 ,
-b110001 9
+b110001 :
+b110001 ;
 b1 %
 b1 (
 b111101 *
-b111101 6
+b111101 7
 b11 $
 b11 '
-b11 0
-b11 3
-b11 5
-b11 8
+b11 1
+b11 4
+b11 6
+b11 9
 b111100 #
 b111100 &
-b111100 /
-b111100 2
-b111100 7
+b111100 0
+b111100 3
+b111100 8
 #5
