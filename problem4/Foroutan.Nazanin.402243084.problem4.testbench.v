@@ -22,7 +22,7 @@ end
 initial begin
     $dumpfile("odd_counter_tb.vcd"); // Set the VCD file name
     $dumpvars(0, odd_counter_tb); 
-    $monitor("Time = %0t, Count = %0d", $time, count);
+    $monitor("Time = %0t, Count = %0d, Reset = %0d", $time, count, reset);
 
     // Initial reset
     reset = 1; // Apply reset

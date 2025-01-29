@@ -22,6 +22,8 @@ module sequence_detector_tb;
     end
 
     initial begin
+        $dumpfile("waveform_problem5.vcd"); 
+        $dumpvars(0, sequence_detector_tb); 
         in_bit = 0;
         reset = 1;
         #10 reset = 0;   // Deassert reset after 10 time units

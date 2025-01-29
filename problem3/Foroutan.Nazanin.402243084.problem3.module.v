@@ -22,7 +22,7 @@ module shift(input [5:0] A, B, output [5:0] res, output cout);
     wire [6:0] shifted_res;
     assign shifted_res = (A <<< 2) + (B >>> 1);
     assign res = shifted_res[5:0];
-    assign cout = shifted_res[6]; // Carry out if any of the upper bits are set
+    assign cout = shifted_res[6];
 endmodule
 
 
