@@ -1,4 +1,4 @@
-`include "Foroutan.Nazanin.402243084.problem3.module.v"
+`include "alu.module.v"
 
 module problem3_testbench();
     reg[5:0] A, B;

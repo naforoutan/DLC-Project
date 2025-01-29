@@ -1,4 +1,4 @@
-`include "Foroutan.Nazanin.402243084.problem5.module.v"
+`include "sequence.detector.module.v"
 `timescale 1ns/1ps
 
 module sequence_detector_tb;

@@ -1,4 +1,4 @@
-`include "Foroutan.Nazanin.402243084.problem1.module.v"
+`include "problem1.module.v"
 
 module problem1_TestBench();
 

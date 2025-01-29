@@ -1,0 +1,73 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x56fd6699c820 .scope module, "fun" "fun" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "a_not";
+    .port_info 2 /INPUT 1 "b";
+    .port_info 3 /INPUT 1 "b_not";
+    .port_info 4 /INPUT 1 "c";
+    .port_info 5 /INPUT 1 "c_not";
+    .port_info 6 /INPUT 1 "d";
+    .port_info 7 /INPUT 1 "d_not";
+    .port_info 8 /OUTPUT 1 "out";
+L_0x56fd669c29d0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+o0x756022a5e018 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x56fd669c2a90 .functor PMOS 1, L_0x56fd669c29d0, o0x756022a5e018, C4<0>, C4<0>;
+o0x756022a5e138 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x56fd669c2b30 .functor PMOS 1, L_0x56fd669c2a90, o0x756022a5e138, C4<0>, C4<0>;
+o0x756022a5e0a8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x56fd669c2c50 .functor PMOS 1, L_0x56fd669c29d0, o0x756022a5e0a8, C4<0>, C4<0>;
+L_0x56fd669c2d20 .functor PMOS 1, L_0x56fd669c2c50, o0x756022a5e138, C4<0>, C4<0>;
+L_0x56fd669c2ec0 .functor PMOS 1, L_0x56fd669c29d0, o0x756022a5e018, C4<0>, C4<0>;
+o0x756022a5e108 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x56fd669c2f30 .functor PMOS 1, L_0x56fd669c2ec0, o0x756022a5e108, C4<0>, C4<0>;
+o0x756022a5e078 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x56fd669c3040 .functor PMOS 1, L_0x56fd669c29d0, o0x756022a5e078, C4<0>, C4<0>;
+L_0x56fd669c30b0 .functor PMOS 1, L_0x56fd669c3040, o0x756022a5e108, C4<0>, C4<0>;
+RS_0x756022a5e2e8 .resolv tri, L_0x56fd669c33b0, L_0x56fd669c3470;
+L_0x56fd669c3260 .functor NMOS 1, RS_0x756022a5e2e8, o0x756022a5e018, C4<0>, C4<0>;
+L_0x56fd669c32d0 .functor NMOS 1, RS_0x756022a5e2e8, o0x756022a5e138, C4<0>, C4<0>;
+RS_0x756022a5e318 .resolv tri, L_0x56fd669c3340, L_0x56fd669c3710;
+L_0x56fd669c33b0 .functor NMOS 1, RS_0x756022a5e318, o0x756022a5e0a8, C4<0>, C4<0>;
+L_0x56fd669c3470 .functor NMOS 1, RS_0x756022a5e318, o0x756022a5e138, C4<0>, C4<0>;
+RS_0x756022a5e348 .resolv tri, L_0x56fd669c38a0, L_0x56fd669c3910;
+L_0x56fd669c3340 .functor NMOS 1, RS_0x756022a5e348, o0x756022a5e018, C4<0>, C4<0>;
+L_0x56fd669c3710 .functor NMOS 1, RS_0x756022a5e348, o0x756022a5e108, C4<0>, C4<0>;
+L_0x56fd669c2940 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+L_0x56fd669c38a0 .functor NMOS 1, L_0x56fd669c2940, o0x756022a5e078, C4<0>, C4<0>;
+L_0x56fd669c3910 .functor NMOS 1, L_0x56fd669c2940, o0x756022a5e108, C4<0>, C4<0>;
+v0x56fd6699ca90_0 .net "a", 0 0, o0x756022a5e018;  0 drivers
+o0x756022a5e048 .functor BUFZ 1, C4<z>; HiZ drive
+v0x56fd669c1a20_0 .net "a_not", 0 0, o0x756022a5e048;  0 drivers
+v0x56fd669c1ae0_0 .net "b", 0 0, o0x756022a5e078;  0 drivers
+v0x56fd669c1b80_0 .net "b_not", 0 0, o0x756022a5e0a8;  0 drivers
+o0x756022a5e0d8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x56fd669c1c40_0 .net "c", 0 0, o0x756022a5e0d8;  0 drivers
+v0x56fd669c1d50_0 .net "c_not", 0 0, o0x756022a5e108;  0 drivers
+v0x56fd669c1e10_0 .net "d", 0 0, o0x756022a5e138;  0 drivers
+o0x756022a5e168 .functor BUFZ 1, C4<z>; HiZ drive
+v0x56fd669c1ed0_0 .net "d_not", 0 0, o0x756022a5e168;  0 drivers
+v0x56fd669c1f90_0 .net8 "gnd", 0 0, L_0x56fd669c2940;  1 drivers, strength-aware
+RS_0x756022a5e1c8 .resolv tri, L_0x56fd669c2b30, L_0x56fd669c2d20, L_0x56fd669c2f30, L_0x56fd669c30b0, L_0x56fd669c3260, L_0x56fd669c32d0;
+v0x56fd669c2050_0 .net8 "out", 0 0, RS_0x756022a5e1c8;  6 drivers, strength-aware
+v0x56fd669c2110_0 .net8 "vdd", 0 0, L_0x56fd669c29d0;  1 drivers, strength-aware
+v0x56fd669c21d0_0 .net8 "w1", 0 0, L_0x56fd669c2a90;  1 drivers, strength-aware
+v0x56fd669c2290_0 .net8 "w2", 0 0, L_0x56fd669c2c50;  1 drivers, strength-aware
+v0x56fd669c2350_0 .net8 "w3", 0 0, L_0x56fd669c2ec0;  1 drivers, strength-aware
+v0x56fd669c2410_0 .net8 "w4", 0 0, L_0x56fd669c3040;  1 drivers, strength-aware
+v0x56fd669c24d0_0 .net8 "w5", 0 0, RS_0x756022a5e2e8;  2 drivers, strength-aware
+v0x56fd669c2590_0 .net8 "w6", 0 0, RS_0x756022a5e318;  2 drivers, strength-aware
+v0x56fd669c2760_0 .net8 "w7", 0 0, RS_0x756022a5e348;  2 drivers, strength-aware
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "problem1.module.v";
